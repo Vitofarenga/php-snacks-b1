@@ -12,7 +12,7 @@
          [
             'nome' => 'Gerardo',
             'cognome' => 'Maiella',
-            [
+            'voti' =>[
                 'matematica'=> 8,
                 'italiano' => 5,
                 'storia' => 6,
@@ -22,7 +22,7 @@
             [
                 'nome' => 'Antonio',
                 'cognome' => 'Priore',
-                [
+                'voti' =>[
                     'matematica'=> 3,
                     'italiano' => 2,
                     'storia' => 5,
@@ -32,7 +32,7 @@
             [
                 'nome' => 'Roberta',
                 'cognome' => 'Freci',
-                [
+                'voti' =>[
                     'matematica'=> 4,
                     'italiano' => 9,
                     'storia' => 9,
@@ -42,19 +42,24 @@
             [
                 'nome' => 'Maria',
                 'cognome' => 'Decia',
-                [
+                'voti' => [
                     'matematica'=> 9,
                     'italiano' => 3,
                     'storia' => 6,
                     'arte' => 10,
                 ]
-             ]
-      ]
+                ],
+            ];
     ?>
     <p>
         <?php for ($i=0; $i <= count ($classe); $i++){ ?>
           <h4>  
             <?php
+            $studente = $classe[$i];
+            $votiStudente = array_values()
+            for($k=0; $k<=($studente['voti']); $k++){
+
+            }
               echo $classe[$i]['nome'] . ' ' . $classe[$i]['cognome'] ;
             ?>
           </h4>
